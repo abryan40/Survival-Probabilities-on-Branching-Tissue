@@ -1,0 +1,17 @@
+The program collects data for BARW system statistics against 'N_0' and 'b'.
+No cellular competition happens here, everything concerns branches random walking in 3D space.
+Collected across only 2000 runs, which include total branch death.
+
+The lines in the data files read as follows:
+
+Tip generation size: 'N_0'
+Branching rate: 'b'
+  Average...
+Number of living branches
+Number of annihilations
+Number of total branches, including "parents" and annihilated branches.
+Number of terminal branches, which excludes parent branches. All "dead ends".
+Total death probability
+
+Note that the number of total branches is equal to 2(terminal)-1
+and number of annihilations is equal to terminal - living.
