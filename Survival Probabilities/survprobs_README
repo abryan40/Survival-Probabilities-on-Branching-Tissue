@@ -1,0 +1,23 @@
+Data files collect Psurv and other quantities against 's' and 'b'.
+The N## in the filename denotes tip generation size N_0 as number of cells.
+FIlename also contains information for initial and final 's' and 'b' as well as
+maximum generation number of sampling (1000) and number of structures (2000).
+
+Each line in the datafiles contains the following:
+
+Selective bias: 's'
+Branching rate: 'b'
+  Average...
+Survival probability: Psurv
+Percentage of mutant cells relative to the total frontier population size.
+Fixation probability: Pfix
+Time to fixation: (generation)
+Extinction probability: Pext
+Time to extinction: (generation)
+Steady state (no intercellular competition) probability: Psts
+Time to steady state: (generation)
+Total number of accepted runs* 
+
+* Given that total death runs are thrown out, some hard limit on the number of attempts has a chance
+to result in accepted runs less than the ideal. For all of the datafiles listed, it is 2000, but the
+program is capable of averaging over an "incomplete" number of runs, which may be useful at large N_0.
