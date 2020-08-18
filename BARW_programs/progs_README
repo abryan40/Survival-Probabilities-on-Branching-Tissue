@@ -1,0 +1,14 @@
+The data in the paper was generated using self-authored C++ programs, the origins for which began in the summer of 2018.
+
+Much of each header or .cpp file is the same, with few differences which may change parameters of interest being collected
+or culling unnecessary processes for optimization. Each program may contain remnants of past iterations or the files they
+were derived from. The "modelplot" program for instance runs on a single thread to generate a single model because the
+statistics files use multi-threading to shorten computation time.
+
+The matrix.h file is a self-defined header containing certain 3 vector and 3x3 vector functions.
+
+Each file was compiled with the following flags:
+
+g++ -std=c++11 -ggdb -O3 -pthread -o ...
+
+All of the parameter changes were hard-coded such that the programs could be run on a cluster with no user input.
