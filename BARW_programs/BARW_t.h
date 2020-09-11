@@ -1121,14 +1121,20 @@ void DirMut(branch& lat,rotor& rot,double x_1,double x_2,double x_3){
     rot.a_vec[2] = lat.dir_arr[2];
 
     norm(rot.a_vec);
-    if(abs(lat.dir_arr[2] - 1) < 0.000001){
-        rot.v_vec[0] = 0;
-        rot.v_vec[1] = 0;
-        rot.v_vec[2] = 0;
-    }else{
-        rot.v_vec = cross3(rot.a_vec,rot.z_vec);
-        norm(rot.v_vec);
+    rot.v_vec = cross3(rot.a_vec,rot.z_vec);
+    if((mag(rot.v_vec) < 0.000000001)){
+        if(rot.a_vec[2] > 0){
+            rot.v_vec[0] = 0;
+            rot.v_vec[1] = 0;
+            rot.v_vec[2] = 1;
+        }else{
+            rot.v_vec[0] = 0;
+            rot.v_vec[1] = 0;
+            rot.v_vec[2] = -1;
+        }
     }
+    norm(rot.v_vec);
+
     // Build components of R
     // =====================
     rot.sksym = vec_to_SkewSym(rot.v_vec);
@@ -1289,6 +1295,7 @@ void CollisionDetection(VB& tree,set<branch*>* active){
                         }
                     }
                 }
+                if(tree[i]->termination) break;
             }
         }
     }
