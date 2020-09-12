@@ -496,8 +496,8 @@ M inv3(const M& a){
 }
 
 void Uniform_Sphere(vector<double>& dir,double x_1,double x_2,double x_3){
-    double theta    = 2*M_PI*x_1;
-    double phi      = 2*M_PI*x_2;
+    double theta    = x_1;
+    double phi      = x_2;
     double z        = x_3;
 
     vector<double> v(3);
