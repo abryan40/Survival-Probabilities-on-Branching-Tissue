@@ -1,0 +1,8 @@
+Time-dependent data for various quantities, indicated by the file name:
+
+Pext: Probability of mutant extinction
+Pfix: Probability of mutant fixation
+Psts: Probability of achieving a steady state of some sort (either extinction or fixation)
+Psurv: Survival probability of mutant
+
+Each row of the file lists the quantity at time t=0,1,2,... in generations. The first element in the row indicates the branching rate "b", which ranges from 0 to 0.06. Note that these data are for branching structures which never fully terminate growth. The quantities are averaged over 2000 branching structures.

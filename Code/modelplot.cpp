@@ -5,7 +5,7 @@
  * 
  * Driver for determining survival statistics on a BARW system, reworked for
  * parallel processes. This one runs only one full instance of a structure and
- * outputs a .vtk 4 scalar file for position and relative color of 
+ * outputs a .vtk 4 scalar file for position and relative color of strains within the branching structure
  **********************/
 #define _USE_MATH_DEFINES
 
