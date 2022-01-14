@@ -1,9 +1,11 @@
 # Survival-Probabilities-on-Branching-Tissue
-Simulation code and raw data for [*Survival in Branching Cellular Populations*](https://arxiv.org/abs/2108.04992) by A. S. Bryant and M. O. Lavrentovich from the Department of Physics and Astronomy at the University of Tennessee, Knoxville ()
+Simulation code and raw data for [*Survival in Branching Cellular Populations*](https://arxiv.org/abs/2108.04992) by A. S. Bryant and M. O. Lavrentovich from the Department of Physics and Astronomy at the University of Tennessee, Knoxville
 
-The code and data directory files are described as follows:
+The code and data directory files are described below.
 
-## Code
+## Code Directory
+
+The contents have all of the necessary C++ code to generate the raw data and structure visualizations of the branching simulations. Different programs correspond to different data types produced:
 
 *X.h* : Header files necessary to compile the programs
 	
@@ -26,7 +28,7 @@ Check the individual *.cpp* files for additional comments on how to set paramete
 
 ## Data
 
-This directory contains subdirectories containing all raw data analyzed in the project. Each subdirectory contains a README describing the format of the raw data.
+This directory contains subdirectories containing all raw data analyzed in the project. Each subdirectory contains a README describing the format of the raw data. These data were produced using the code in the Code directory.
 	
 ## Branching structure visualization
 
